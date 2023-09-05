@@ -87,10 +87,10 @@ ul button {
   margin-top: 10px;
 }
 /* videos section styles */
-.videos-section {
+section {
   width: 1200px;
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 100px 0px;
   text-align: center;
 }
 
@@ -126,4 +126,22 @@ ul button {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}
+/* play  */
+.play-instant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-instant-content {
+  width: 320px;
+}
+.play-instant-img {
+  position: relative;
+}
+.img-badge {
+  width: 200px;
+  position: absolute;
+  left: -15px;
+  bottom: -50px;
 }
