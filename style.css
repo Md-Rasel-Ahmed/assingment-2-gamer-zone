@@ -42,7 +42,7 @@ nav {
   border-bottom: 2px solid #ff42a5;
   padding: 15px 15px;
 }
-ul {
+nav ul {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -144,4 +144,51 @@ section {
   position: absolute;
   left: -15px;
   bottom: -50px;
+}
+/* game */
+.games {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.game {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-radius: 40px;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.game img {
+  width: 40px;
+}
+.game:hover {
+  background-color: #ff42a5;
+  color: #fff;
+}
+/* footer */
+footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding: 100px 0px;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+.footer-menu > ul,
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.footer-icon i {
+  font-size: 30px;
+  margin: 0 15px;
+  padding: 20px 0px;
 }
