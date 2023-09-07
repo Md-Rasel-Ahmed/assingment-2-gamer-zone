@@ -1,6 +1,14 @@
 * {
   margin: 0px;
 }
+body {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+section {
+  padding: 50px 0px;
+}
 /* shared styles */
 .btn-primary {
   background-color: #ff42a5;
@@ -35,13 +43,12 @@ h1 {
   font-size: 3em;
 }
 /* header section styles */
+
 nav {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #ff42a5;
-  padding: 15px 15px;
+  border: 1px solid red;
 }
 nav ul {
   display: flex;
@@ -64,7 +71,6 @@ ul button {
 }
 .banner {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -88,16 +94,10 @@ ul button {
   margin-top: 10px;
 }
 /* videos section styles */
-section {
-  width: 1200px;
-  margin: 0px auto;
-  padding: 100px 0px;
-  text-align: center;
-}
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   justify-content: space-evenly;
   padding-top: 2em;
@@ -106,28 +106,7 @@ section {
   width: 250px;
   padding: 5px;
 }
-.card-overly {
-  position: relative;
-}
 
-.overly {
-  position: absolute;
-  top: 5px;
-  color: #ff42a5;
-  background-color: black;
-  border-radius: 10px;
-  width: 96%;
-  height: 83%;
-  border: 3px solid #ff42a5;
-
-  opacity: 0.7;
-}
-.overly i {
-  margin-top: 120px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-}
 /* play  */
 .play-instant {
   display: flex;
@@ -174,7 +153,6 @@ footer {
   background-color: black;
   color: #fff;
   padding: 100px 0px;
-  width: 1200px;
 }
 .footer-logo {
   display: flex;
@@ -196,10 +174,10 @@ ul {
 }
 /* responsive desing for mobile  */
 @media screen and (max-width: 576px) {
-  nav,
+  /* nav,
   nav ul {
     flex-direction: column;
-  }
+  } */
   .banner,
   .play-instant {
     flex-direction: column-reverse;
