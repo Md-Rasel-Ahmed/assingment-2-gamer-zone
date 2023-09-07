@@ -48,7 +48,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  border-bottom: 1px solid #ff42a5;
 }
 nav ul {
   display: flex;
